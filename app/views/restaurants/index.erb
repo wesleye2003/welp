@@ -1,0 +1,15 @@
+<div class="restaurants-container">
+	<% @restaurants.each do |restaurant| %>
+		<%= erb :"restaurants/_show", locals:{restaurant: restaurant}, layout: false %>
+	<% end %>
+
+	<% if current_user %>
+		<form class="restaurant-button" action="/restaurants/new" method='get'>
+			<input type="submit" value="Add a restaurant!">
+		</form>
+	<% else %>
+		<form class="restaurant-button" action="/login" method='get'>
+			<input type="submit" value="Log in to add a restaurant!">
+		</form>
+	<% end %>
+</div>

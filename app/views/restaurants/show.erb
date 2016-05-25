@@ -1,0 +1,26 @@
+<div class="restaurant-details">
+	<section class="restaurant">
+		<%= erb :"restaurants/_details", locals: {restaurant: @restaurant} %>
+	</section>
+
+	
+	<% if @restaurant.critics.include?(current_user)%>
+		<%= erb :'reviews/_thanks' %>
+	<% elsif current_user %>
+		<section class="review-action">
+			<%= erb :_errors %>
+			<%= erb :'reviews/_new_form', locals: {restaurant: @restaurant} %>
+		</section>
+	<% else %>
+		<section class="review-action">
+			<form class="login-button" action="/login" method='get'>
+				<input type="submit" value="Log in to add a review!">
+			</form>
+		</section>
+	<% end %>
+
+	<section class="reviews-section">
+		<h2 class="review-header">Reviews: </h2>
+		<%= erb :"reviews/_restaurant_specific", locals: {restaurant: @restaurant}%>
+	</section>
+</div>

@@ -1,0 +1,139 @@
+header {
+	background-color: orange;
+	height: 5em;
+}
+
+header h1{
+	font-size: 4em;
+	position: absolute;
+	left: 0.5em;
+	margin: 0;
+}
+
+nav {
+	position: absolute;
+	top: 0.5em;
+	right: 1em;
+	font-size: 2em;
+}
+
+.register-container, .restaurants-container, .restaurant-details {
+	position: absolute;
+	top: 7em; left: 0; bottom: 0; right: 0;
+	padding-bottom: 1em;
+	width: 50%;
+	min-height: 70%;
+	margin: auto;
+	border: 5px solid orange;
+	border-radius: 10px;
+	text-align: center;
+	overflow: auto;
+	margin-bottom: 4em;
+}
+
+.register-form, .email-form, .password-form, .rest-form {
+	padding-top: 1em; padding-bottom: 1em;
+}
+
+#title {
+	color: red;
+	text-decoration: none;
+}
+
+.error {
+	color: red;
+}
+
+.restaurant-card {
+	position: relative;
+	display: inline-block;
+	padding: 1em;
+	margin: 2em;
+	border: 2px solid orange;
+	width: 25%;
+	font-size: 1em;
+	height: 4em;
+}
+
+.restaurant-button {
+	text-align: center;
+}
+
+.restaurants-container, .restaurant-details {
+	position: relative;
+	text-align: left;
+	top: 1em;
+	bottom: 1em;
+	width: 90%;
+	height: 90%;
+	padding-bottom: 2em;
+}
+.restaurant-card a {
+	display: block;
+	text-decoration: none;
+	color: red;
+	margin-bottom: 1em;
+}
+
+.restaurant-details {
+	padding-left: 2em;
+}
+
+.review-button {
+	text-align: center;
+}
+.rest-user-button {
+	float: right;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.restaurant-title {
+	color: red;
+	font-size: 3em;
+}
+
+.restaurant-breakdown {
+	font-size: 1.5em;
+}
+
+.restaurant, .review-action {
+	margin-right: 2em;
+	border-bottom: 4px solid orange;
+	padding-bottom: 1em;
+	margin-top: 1em;
+}
+
+.review {
+	border: 4px solid orange;
+	border-radius: 10px;
+	padding: 1em;
+	margin-right: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: #EFDCBA;
+}
+
+.thanks {
+	color:green;
+	text-align: center;
+	font-size: 2em;
+}
+
+textarea {
+	width: 95%;
+	height: 4em;
+}
+
+.review-button {
+	float: right;
+	margin-right: 5em;
+}
+
+#new-review {
+	margin-bottom: 2em;
+}
+
+.login-button {
+	text-align: center;
+}

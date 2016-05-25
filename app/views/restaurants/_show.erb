@@ -1,0 +1,16 @@
+<article class="restaurant-card">
+	<a href="/restaurants/<%= restaurant.id%>"><%= restaurant.name %></a>
+	<span><%= restaurant.city %>,</span>
+	<span><%= restaurant.state %></span>
+
+	<% if current_user == restaurant.user %>
+		<form class="rest-user-button delete" action="/restaurants/<%=restaurant.id%>" method='post'>
+			<input type="hidden" name="_method" value="DELETE">
+			<input type="submit" value="Delete">
+		</form>
+		
+		<form class="rest-user-button edit" action="/restaurants/<%=restaurant.id%>/edit" method='get'>
+			<input type="submit" value="Edit">
+		</form>
+	<% end %>
+</article>

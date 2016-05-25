@@ -1,0 +1,29 @@
+<form class="register-form" action="/restaurants/<%=restaurant.id%>" method='post'>
+	<input type="hidden" name="_method" value="put">
+	<h2>Edit Restaurant Details</h2>
+  <div class="rest-form">
+    <label for="restaurant[name]">Name</label>
+    <input type="text" value="<%=restaurant.name%>" name='restaurant[name]'>
+  </div>
+  <div class="rest-form">
+    <label for="restaurant[address]">Cuisine Style</label>
+    <input type="text"  value="<%=restaurant.cuisine%>" name='restaurant[cuisine]'>
+  </div>
+  <div class="rest-form">
+    <label for="restaurant[address]">Address</label>
+    <input type="text" value="<%=restaurant.address%>" name='restaurant[address]'>
+  </div>
+  <div class="rest-form">
+    <label for="restaurant[city]">City</label>
+    <input type="text" value="<%=restaurant.city%>" name='restaurant[city]'>
+  </div>
+  <div class="rest-form">
+    <label for="restaurant[state]">State</label>
+    <input type="text" value="<%=restaurant.state%>" name='restaurant[state]'>
+  </div>
+  <div class="rest-form">
+    <label for="restaurant[zip]">Zipcode</label>
+    <input type="text" value="<%=restaurant.zip%>" name='restaurant[zip]'>
+  </div>
+  <input class="submit-button" type='submit'>
+</form>

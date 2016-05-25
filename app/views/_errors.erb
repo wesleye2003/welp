@@ -1,0 +1,8 @@
+<% if @errors %>
+  <div class="errors">
+    <p>There was a problem:</p>
+      <% @errors.each do |error| %>
+        <p class="error"><%= error %></p>
+      <%end%>
+  </div>
+<% end %>

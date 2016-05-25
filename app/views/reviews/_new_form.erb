@@ -1,0 +1,15 @@
+<form id="new-review" class="register-form" action="/restaurants/<%=restaurant.id%>/reviews" method='post'>
+	<h2>Write a review</h2>
+  <label for="review[rating]">Rating: </label>
+  <select form="new-review" name="review[rating]">
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    <option value=4>4</option>
+    <option value=5>5</option>
+  </select>
+  <div class="rest-form">
+    <textarea name='review[body]' form="new-review" placeholder="How was your experience?"></textarea>
+  </div>
+  <input class="review-button" type='submit' value="Submit Review">
+</form>
